@@ -1,0 +1,183 @@
+body {
+	background-image: url("bg1.jpg");
+	max-width: 100%;
+}
+h1 {
+	text-align:center;
+	font-family:Century Gothic;
+	font-size:8vw;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+div {
+	position:relative;
+}
+.topnav {
+	padding-top:0;
+	margin-top:0;
+	overflow:hidden;
+	background-color:#b73535;
+	text-align:center;
+	position:relative;
+	margin:auto;
+	padding-left:35%;
+	max-width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 1%;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("bga.gif");
+}
+
+li {
+	float:left;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	margin-right: :1%;
+	padding: 20;
+	border-radius: 10px;
+	color: white;
+}
+li a {
+  font-family: Century Gothic;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration:0.1s;
+}
+li a:hover {
+	border-radius: 10px;
+  background-color: #b73535;
+  font-size: 20;
+}
+.topnav a {
+	float:left;
+	display: block;
+	color: white;
+	text-align:center;
+	padding:1vw 1vw;
+	text-decoration:none;
+	font-size: 1vw;
+	font-family:Century Gothic;
+	margin:auto;
+}
+.topnav a:hover {
+	background-color:#9a5d20;
+	color: black;
+}
+.topnav a.active {
+	background-image: url("bga.gif");
+	color:white;
+}
+.topnav .icon {
+	display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a{
+    float: none;
+    display: block;
+  }
+  .topnav {
+	  padding-left:0%;
+  }
+}
+
+.me {
+	background-image: url("bga.gif");
+	max-width: 100%;
+	display: flex;
+	justify-content:center;
+	margin-top:1%;
+}
+.mee {
+	margin-top: 7%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+	width: 95%;
+}
+p {
+	font-family:Century Gothic;
+	font-size:1.2vw;
+	padding:2%;
+	margin:3%;
+	margin-top: 6%;
+	color:white;
+}
+.button2 {
+	transition-duration:0.3s;
+	background-color: #b73535;
+	border-radius: 20px;
+	text-align: center;
+	font-family: Century Gothic;
+	font-size:25;
+	cursor: pointer;
+	padding: 10%;
+	margin: auto;
+	position: relative;
+	color: white;
+	margin-top:10%;
+	margin-left:15%;
+}
+.button2:hover {
+	background-image: url("bga.gif");
+	font-size: 30;
+	color: white;
+	
+}
+.zoom {
+  transition: transform .2s;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 6%;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); 
+}
+.button {
+  font-family: Century Gothic;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #b73535;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
