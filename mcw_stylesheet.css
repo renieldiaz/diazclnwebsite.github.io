@@ -77,15 +77,6 @@ li a:hover {
 .topnav .icon {
 	display: none;
 }
-@media screen and (max-width: 600px) {
-  .topnav a{
-    float: none;
-    display: block;
-  }
-  .topnav {
-	  padding-left:0%;
-  }
-}
 
 .me {
 	background-image: url("bga.gif");
