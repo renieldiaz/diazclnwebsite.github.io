@@ -20,7 +20,7 @@ div {
 	text-align:center;
 	position:relative;
 	margin:auto;
-	padding-left:35%;
+	padding-left:37%;
 	max-width: 100%;
 }
 ul {
@@ -34,9 +34,9 @@ ul {
 li {
 	float:left;
 	margin-top: 0.5%;
-	margin-left: 1%;
-	margin-bottom: 1%;
-	margin-right: :1%;
+	margin-left: 10%;
+	margin-bottom: 0.5%;
+	margin-right: :5%;
 	padding: 20;
 	border-radius: 10px;
 	color: white;
@@ -49,11 +49,12 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   transition-duration:0.1s;
+  font-size: 1vw;
 }
 li a:hover {
 	border-radius: 10px;
   background-color: #b73535;
-  font-size: 20;
+  font-size: 1.3vw;
 }
 .topnav a {
 	float:left;
@@ -92,6 +93,10 @@ li a:hover {
 	float: left;
 	width: 95%;
 }
+.img {
+	justify-content: center;
+	display: flex;
+}
 p {
 	font-family:Century Gothic;
 	font-size:1.2vw;
@@ -99,6 +104,11 @@ p {
 	margin:3%;
 	margin-top: 6%;
 	color:white;
+}
+h2 {
+	font-family: Brush Script MT;
+	font-size: 3vw;
+	text-align: center;
 }
 .button2 {
 	transition-duration:0.3s;
@@ -171,4 +181,25 @@ p {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+@media only screen and (max-width: 600px) {
+  img {
+    width: 20%;
+    height: 15%; 
+  }
+  .zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+  }
+  .mee {
+  	position: relative;
+	margin-top: 7%;
+	margin-left: 1%;
+	text-align: center;
+  }
+  li {
+    margin: 1%;
+    padding: 2px 15px;
+  }
 }
